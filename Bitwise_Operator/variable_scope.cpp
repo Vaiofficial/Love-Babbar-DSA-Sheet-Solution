@@ -3,19 +3,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+int num = 34;
 int main()
 {
-    int num = 34;
     string name = "Vaibhav";
 
-    if(name=="Vaibhav")
+    if (name == "Vaibhav")
     {
         num = 56;
-        cout<<num<<endl;
+        cout << num << endl;
     }
 
-    cout <<num<<endl;
-    cout<<num;
+    cout << num << endl;
+    cout << num;
 
     return 0;
 }

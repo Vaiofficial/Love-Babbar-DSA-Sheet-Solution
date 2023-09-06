@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-   int a = 11;
+   int a = 10;
 
    cout<<(++a) * (a++)<<endl;
 //    cout<<(a++)<<endl;
