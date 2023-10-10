@@ -21,7 +21,7 @@ int powerFast(int a , int b)
             ans  = ans*a;
         }
         a = a * a;
-        b>=1;
+        b>>=1;
     }
     return ans;  
 }
@@ -29,7 +29,7 @@ int powerFast(int a , int b)
 int main()
 {
     cout <<powerBasic(2, 3) << endl;
-    cout <<powerFast(2, 3) << endl;
+    cout <<powerFast(2, 4) << endl;
 
     return 0;
 }
