@@ -22,7 +22,7 @@ void subsequenceFind(string s, string output, int index)
 
 int main()
 {
-    string s = "xy";
+    string s = "xyz";
     string output = "";
     int index = 0;
 
