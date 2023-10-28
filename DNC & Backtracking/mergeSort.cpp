@@ -75,7 +75,9 @@ while (rightindex < lenright)
 void mergeSort(int arr[] , int s , int e)
 {
 
-    if(s>=e)
+    ht side array
+    mergeSort(arr , mid+1 , e);
+    //merging both the arif(s>=e)
     {
         return;
     }
@@ -83,9 +85,7 @@ void mergeSort(int arr[] , int s , int e)
 
     //calling left side array
     mergeSort(arr ,s , mid);
-    //calling right side array
-    mergeSort(arr , mid+1 , e);
-    //merging both the array
+    //calling rigray
     merge(arr , s , e);
 }
 

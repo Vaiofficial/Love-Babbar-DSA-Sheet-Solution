@@ -100,12 +100,13 @@ int main()
     int row = 4;
     int col = 4;
 
-    int srcx = 0; // source positions
-    int srcy = 0;
-    string output = "";
-
     // created visited array to check whether element is already visited or not to the position we want to go next.
     vector<vector<bool>> visited(row, vector<bool>(col, false));
+
+    int srcx = 0; // source positions , start.
+    int srcy = 0;
+    string output = ""; // to store output.
+
 
     if (maze[0][0] == 0)
     {
@@ -113,7 +114,7 @@ int main()
     }
     else
     {
-        visited[srcx][srcy] == true;
+        visited[srcx][srcy] = true; // src = source
         printallMaze(maze, row, col, srcx, srcy, output, visited);
     }
 
