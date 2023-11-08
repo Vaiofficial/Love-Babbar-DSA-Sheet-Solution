@@ -169,20 +169,21 @@ void deleteNode(Node *&head, Node *&tail, int position)
     else
     {
         Node *curr = head;
-        Node *prev = NULL;
+        Node *prevNode = NULL;
 
         while (position != 1)
         {
-            prev = curr;
+            prevNode = curr;
             curr = curr->next;
             position--; // yaha galti ho rhi hai vaibhav bar baar so take caree.....
         }
 
-        Node *newNode = curr->next;
+        Node *nextNode = curr->next;
 
-        prev->next = newNode;
+        prevNode->next = nextNode;
+        curr->next = NULL;
         curr->prev = NULL;
-        newNode->prev = NULL;
+        nextNode->prev = prevNode;
         delete curr;
     }
 }
@@ -201,23 +202,23 @@ int main()
     printNode(head);
     cout << endl;
 
-    deleteNode(head, tail, 1);
+    deleteNode(head, tail, 2);
     printNode(head);
     cout << endl;
 
-    deleteNode(head, tail, 1);
-    printNode(head);
-    cout << endl;
+    // deleteNode(head, tail, 1);
+    // printNode(head);
+    // cout << endl;
 
-    deleteNode(head, tail, 1);
-    printNode(head);
-    cout << endl;
+    // deleteNode(head, tail, 1);
+    // printNode(head);
+    // cout << endl;
 
-    deleteNode(head, tail, 1);
-    printNode(head);
+    // deleteNode(head, tail, 1);
+    // printNode(head);
 
-    deleteNode(head, tail, 1);
-    printNode(head);
+    // deleteNode(head, tail, 1);
+    // printNode(head);
 
     return 0;
 }
