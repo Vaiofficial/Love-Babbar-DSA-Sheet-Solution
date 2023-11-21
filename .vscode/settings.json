@@ -7,6 +7,8 @@
         "initializer_list": "cpp",
         "regex": "cpp",
         "utility": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "ostream": "cpp",
+        "*.tcc": "cpp"
     }
 }
