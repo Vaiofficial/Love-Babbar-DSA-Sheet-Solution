@@ -12,8 +12,8 @@ void negativeWindow(int *arr, int n, int k)
         if (arr[i] < 0)
         {
             dq.push_back(i);
-        }
     }
+        }
 
     // now process remaining windows
 
