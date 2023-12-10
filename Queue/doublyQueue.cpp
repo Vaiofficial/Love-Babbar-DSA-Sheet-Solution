@@ -3,7 +3,6 @@ using namespace std;
 
 class DQueue
 {
-
 public:
     int *arr;
     int size;
