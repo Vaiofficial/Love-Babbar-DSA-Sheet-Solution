@@ -169,7 +169,7 @@ int main()
     cout << endl;
 
     // Heap h(20);
-    // // insertioin
+    // // insertion
     // h.insert(10);
     // h.insert(20);
     // h.insert(5);
