@@ -69,6 +69,8 @@ public:
                 }
             }
         }
+        // agar ak relaxation extra chalane ke baad kuch changes hua hai means anyupdate true ho jyga hence
+        // hum check kar lenge and ans accordingly return karenge.
         if (anyUpdate == true)
         {
             cout << "negative cycle is present" << endl;
