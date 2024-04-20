@@ -9,6 +9,7 @@
         "utility": "cpp",
         "valarray": "cpp",
         "ostream": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "unordered_map": "cpp"
     }
 }
